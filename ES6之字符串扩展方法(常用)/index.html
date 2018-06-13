@@ -15,18 +15,18 @@
 
 
 
-<meta name="description" content="includes">
+<meta name="description" content="includesincludes是判断是否包含的,直接返回布尔值">
 <meta name="keywords" content="ES6,String">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ES6之字符串扩展方法(常用)">
 <meta property="og:url" content="http://yoursite.com/ES6之字符串扩展方法(常用)/index.html">
 <meta property="og:site_name" content="Chen">
-<meta property="og:description" content="includes">
+<meta property="og:description" content="includesincludes是判断是否包含的,直接返回布尔值">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-22T14:53:19.880Z">
+<meta property="og:updated_time" content="2018-06-13T03:40:15.231Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ES6之字符串扩展方法(常用)">
-<meta name="twitter:description" content="includes">
+<meta name="twitter:description" content="includesincludes是判断是否包含的,直接返回布尔值">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -313,9 +313,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <center> 
-
-<h1 id="includes"><a href="#includes" class="headerlink" title="includes"></a>includes</h1><p></p></center><br><a id="more"></a><br>includes是判断是否包含的,直接返回布尔值<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">let str=&apos;google&apos;;</span><br><span class="line">if(str.includes(&apos;o&apos;))&#123;</span><br><span class="line">   console.log(&apos;yes&apos;);</span><br><span class="line">&#125;else&#123;</span><br><span class="line">   console.log(&apos;no&apos;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p></p>
+        <h1 id="includes"><a href="#includes" class="headerlink" title="includes"></a>includes</h1><p>includes是判断是否包含的,直接返回布尔值<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">let str=&apos;google&apos;;</span><br><span class="line"></span><br><span class="line">if(str.includes(&apos;o&apos;))&#123;</span><br><span class="line">   console.log(&apos;yes&apos;);</span><br><span class="line">&#125;else&#123;</span><br><span class="line">   console.log(&apos;no&apos;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h1 id="startsWith-，endsWith"><a href="#startsWith-，endsWith" class="headerlink" title="startsWith ，endsWith"></a>startsWith ，endsWith</h1><p>startsWith用于判断是否位于头部，endsWith判断是否位于尾部，可以说这两个方法是includes方法的扩展；<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">let str=&apos;google&apos;;</span><br><span class="line"></span><br><span class="line">console.log(str.startsWith(&apos;g&apos;));  //true</span><br><span class="line"></span><br><span class="line">console.log(str.endsWith(&apos;e&apos;));    //true</span><br></pre></td></tr></table></figure></p>
 <h1 id="repeat"><a href="#repeat" class="headerlink" title="repeat"></a>repeat</h1><p>顾名思义，这个方法就是可以获取字符串重复N次后的方法；<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">let str=&apos;google&apos;;</span><br><span class="line">console.log(str.repeat(3)); //googlegooglegoogle</span><br></pre></td></tr></table></figure></p>
 <p>repeat方法接受一个数字类型的参数，可以是正式也可以是小数，如果是浮点型会自动调用Math.floor方法转为整型；<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let str=&apos;google&apos;;</span><br><span class="line">console.log(str.repeat(3.5)); //googlegooglegoogle</span><br><span class="line">console.log(str.repeat(Math.floor(3.5)));//googlegooglegoogle</span><br></pre></td></tr></table></figure></p>

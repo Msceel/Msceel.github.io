@@ -15,18 +15,18 @@
 
 
 
-<meta name="description" content="find :">
+<meta name="description" content="find :  1234567let arr=[1,2,234,&amp;apos;sdf&amp;apos;,-2];arr.find(function(x)&amp;#123;    return x&amp;lt;=2;&amp;#125;)//结果：1，返回第一个符合条件的x值arr.find(function(x,i,arr)&amp;#123;    if(x&amp;lt;2)&amp;#123;console.log(x,i,arr)&amp;#12">
 <meta name="keywords" content="ES6,Array">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ES6 Array扩展">
 <meta property="og:url" content="http://yoursite.com/es6新增array/index.html">
 <meta property="og:site_name" content="Chen">
-<meta property="og:description" content="find :">
+<meta property="og:description" content="find :  1234567let arr=[1,2,234,&amp;apos;sdf&amp;apos;,-2];arr.find(function(x)&amp;#123;    return x&amp;lt;=2;&amp;#125;)//结果：1，返回第一个符合条件的x值arr.find(function(x,i,arr)&amp;#123;    if(x&amp;lt;2)&amp;#123;console.log(x,i,arr)&amp;#12">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-22T14:46:37.156Z">
+<meta property="og:updated_time" content="2018-06-13T03:39:26.147Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ES6 Array扩展">
-<meta name="twitter:description" content="find :">
+<meta name="twitter:description" content="find :  1234567let arr=[1,2,234,&amp;apos;sdf&amp;apos;,-2];arr.find(function(x)&amp;#123;    return x&amp;lt;=2;&amp;#125;)//结果：1，返回第一个符合条件的x值arr.find(function(x,i,arr)&amp;#123;    if(x&amp;lt;2)&amp;#123;console.log(x,i,arr)&amp;#12">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -313,7 +313,9 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p><center> <strong><em> find : </em></strong> </center><br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">let arr=[1,2,234,&apos;sdf&apos;,-2];</span><br><span class="line">arr.find(function(x)&#123;</span><br><span class="line">    return x&lt;=2;</span><br><span class="line">&#125;)//结果：1，返回第一个符合条件的x值</span><br><span class="line">arr.find(function(x,i,arr)&#123;</span><br><span class="line">    if(x&lt;2)&#123;console.log(x,i,arr)&#125;</span><br><span class="line">&#125;)//结果：1 0 [1, 2, 234, &quot;sdf&quot;, -2]，-2 4 [1, 2, 234, &quot;sdf&quot;, -2]</span><br></pre></td></tr></table></figure></p>
+        <p><strong><em> find : </em></strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">let arr=[1,2,234,&apos;sdf&apos;,-2];</span><br><span class="line">arr.find(function(x)&#123;</span><br><span class="line">    return x&lt;=2;</span><br><span class="line">&#125;)//结果：1，返回第一个符合条件的x值</span><br><span class="line">arr.find(function(x,i,arr)&#123;</span><br><span class="line">    if(x&lt;2)&#123;console.log(x,i,arr)&#125;</span><br><span class="line">&#125;)//结果：1 0 [1, 2, 234, &quot;sdf&quot;, -2]，-2 4 [1, 2, 234, &quot;sdf&quot;, -2]</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <p>find的参数为回调函数，回调函数可以接收3个参数，值x、索引i、数组arr，回调函数默认返回值x。<br><strong><em> findIndex :</em></strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">let arr=[1,2,234,&apos;sdf&apos;,-2];</span><br><span class="line">arr.findIndex(function(x)&#123;</span><br><span class="line">    return x&lt;=2;</span><br><span class="line">&#125;)//结果：0，返回第一个符合条件的x值的索引</span><br><span class="line">arr.findIndex(function(x,i,arr)&#123;</span><br><span class="line">    if(x&lt;2)&#123;console.log(x,i,arr)&#125;</span><br><span class="line">&#125;)//结果：1 0 [1, 2, 234, &quot;sdf&quot;, -2]，-2 4 [1, 2, 234, &quot;sdf&quot;, -2]</span><br></pre></td></tr></table></figure></p>
 <p>findIndex和find差不多，不过默认返回的是索引。</p>
 <p><strong><em> includes :</em></strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">let arr=[1,2,234,&apos;sdf&apos;,-2];</span><br><span class="line">arr.includes(2);// 结果true，返回布尔值</span><br><span class="line">arr.includes(20);// 结果：false，返回布尔值</span><br><span class="line">arr.includes(2,3)//结果：false，返回布尔值</span><br></pre></td></tr></table></figure></p>
