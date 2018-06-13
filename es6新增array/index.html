@@ -15,17 +15,18 @@
 
 
 
-<meta name="description" content="一个前端小美女~">
-<meta property="og:type" content="website">
-<meta property="og:title" content="About">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+<meta name="description" content="find :">
+<meta name="keywords" content="ES6,Array">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ES6 Array扩展">
+<meta property="og:url" content="http://yoursite.com/es6新增array/index.html">
 <meta property="og:site_name" content="Chen">
-<meta property="og:description" content="一个前端小美女~">
+<meta property="og:description" content="find :">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-29T13:19:10.254Z">
+<meta property="og:updated_time" content="2018-05-22T14:46:37.156Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="About">
-<meta name="twitter:description" content="一个前端小美女~">
+<meta name="twitter:title" content="ES6 Array扩展">
+<meta name="twitter:description" content="find :">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -57,7 +58,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>About | Chen</title>
+<title>ES6 Array扩展 | Chen</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -67,7 +68,7 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
         isCategory: false,
@@ -272,11 +273,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-es6新增array" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/about/index.html" class="article-date">
-      <time datetime="2017-01-01T13:15:22.000Z" itemprop="datePublished">2017-01-01</time>
+      <a href="/es6新增array/" class="article-date">
+      <time datetime="2017-02-10T13:16:21.000Z" itemprop="datePublished">2017-02-10</time>
 </a>
 
 
@@ -291,7 +292,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      About
+      ES6 Array扩展
     </h1>
   
 
@@ -301,6 +302,10 @@
         
 
         
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Array/">Array</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ES6/">ES6</a></li></ul>
+    </div>
+
         <div class="clearfix"></div>
       </div>
       
@@ -308,50 +313,25 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <style>
-    .article-meta { display: none; }
-    #container .article .article-title { padding-right: 0; }
-    .article-header {
-        padding: 0;
-        padding-top: 26px;
-        border-left: none;
-        text-align: center;
-    }
-    .article-header:hover { border-left: none; }
-    .article-title { font-size: 1.6em }
-    .article-entry hr { margin: 0;}
-    .article-meta,
-    #container .article-info-post.article-info { display: none;}
-    #container .article .article-title { padding: 0; }
-</style>
-
-
-          
-        <a id="more"></a>
-<center>一个前端小美女~</center>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <p><center> <strong><em> find : </em></strong> </center><br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">let arr=[1,2,234,&apos;sdf&apos;,-2];</span><br><span class="line">arr.find(function(x)&#123;</span><br><span class="line">    return x&lt;=2;</span><br><span class="line">&#125;)//结果：1，返回第一个符合条件的x值</span><br><span class="line">arr.find(function(x,i,arr)&#123;</span><br><span class="line">    if(x&lt;2)&#123;console.log(x,i,arr)&#125;</span><br><span class="line">&#125;)//结果：1 0 [1, 2, 234, &quot;sdf&quot;, -2]，-2 4 [1, 2, 234, &quot;sdf&quot;, -2]</span><br></pre></td></tr></table></figure></p>
+<p>find的参数为回调函数，回调函数可以接收3个参数，值x、索引i、数组arr，回调函数默认返回值x。<br><strong><em> findIndex :</em></strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">let arr=[1,2,234,&apos;sdf&apos;,-2];</span><br><span class="line">arr.findIndex(function(x)&#123;</span><br><span class="line">    return x&lt;=2;</span><br><span class="line">&#125;)//结果：0，返回第一个符合条件的x值的索引</span><br><span class="line">arr.findIndex(function(x,i,arr)&#123;</span><br><span class="line">    if(x&lt;2)&#123;console.log(x,i,arr)&#125;</span><br><span class="line">&#125;)//结果：1 0 [1, 2, 234, &quot;sdf&quot;, -2]，-2 4 [1, 2, 234, &quot;sdf&quot;, -2]</span><br></pre></td></tr></table></figure></p>
+<p>findIndex和find差不多，不过默认返回的是索引。</p>
+<p><strong><em> includes :</em></strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">let arr=[1,2,234,&apos;sdf&apos;,-2];</span><br><span class="line">arr.includes(2);// 结果true，返回布尔值</span><br><span class="line">arr.includes(20);// 结果：false，返回布尔值</span><br><span class="line">arr.includes(2,3)//结果：false，返回布尔值</span><br></pre></td></tr></table></figure></p>
+<p>includes函数与string的includes一样，接收2参数，查询的项以及查询起始位置。</p>
+<p><strong><em> keys :</em></strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">let arr=[1,2,234,&apos;sdf&apos;,-2];</span><br><span class="line">for(let a of arr.keys())&#123;</span><br><span class="line">    console.log(a)</span><br><span class="line">&#125;//结果：0,1,2,3,4  遍历了数组arr的索引</span><br></pre></td></tr></table></figure></p>
+<p>keys，对数组索引的遍历</p>
+<p><strong><em> values :</em></strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">let arr=[1,2,234,&apos;sdf&apos;,-2];</span><br><span class="line">for(let a of arr.values())&#123;</span><br><span class="line">    console.log(a)</span><br><span class="line">&#125;//结果：1,2,234,sdf,-2 遍历了数组arr的值</span><br></pre></td></tr></table></figure></p>
+<p>values，对数组项的遍历</p>
+<p><strong><em> entries :</em></strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">let arr=[&apos;w&apos;,&apos;b&apos;];</span><br><span class="line">for(let a of arr.entries())&#123;</span><br><span class="line">    console.log(a)</span><br><span class="line">&#125;//结果：[0,w],[1,b]</span><br><span class="line">for(let [i,v] of arr.entries())&#123;</span><br><span class="line">    console.log(i,v)</span><br><span class="line">&#125;//结果：0 w,1 b</span><br></pre></td></tr></table></figure></p>
+<p>entries，对数组键值对的遍历。</p>
+<p><strong><em> fill :</em></strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">let arr=[&apos;w&apos;,&apos;b&apos;];</span><br><span class="line">arr.fill(&apos;i&apos;)//结果：[&apos;i&apos;,&apos;i&apos;]，改变原数组</span><br><span class="line">arr.fill(&apos;o&apos;,1)//结果：[&apos;i&apos;,&apos;o&apos;]改变原数组,第二个参数表示填充起始位置</span><br><span class="line">new Array(3).fill(&apos;k&apos;).fill(&apos;r&apos;,1,2)//结果：[&apos;k&apos;,&apos;r&apos;,&apos;k&apos;]，第三个数组表示填充的结束位置</span><br></pre></td></tr></table></figure></p>
+<p>fill方法改变原数组，当第三个参数大于数组长度时候，以最后一位为结束位置。</p>
+<p><strong><em> Array.of() :</em></strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Array.of(&apos;w&apos;,&apos;i&apos;,&apos;r&apos;)//[&quot;w&quot;, &quot;i&quot;, &quot;r&quot;]返回数组</span><br><span class="line">Array.of([&apos;w&apos;,&apos;o&apos;])//[[&apos;w&apos;,&apos;o&apos;]]返回嵌套数组</span><br><span class="line">Array.of(undefined)//[undefined]依然返回数组</span><br><span class="line">Array.of()//[]返回一个空数组</span><br></pre></td></tr></table></figure></p>
+<p>Array.of()方法永远返回一个数组，参数不分类型，只分数量，数量为0返回空数组。</p>
+<p><strong><em> copyWithin :</em></strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[&quot;w&quot;, &quot;i&quot;, &quot;r&quot;].copyWithin(0)//此时数组不变</span><br><span class="line">[&quot;w&quot;, &quot;i&quot;, &quot;r&quot;].copyWithin(1)//[&quot;w&quot;, &quot;w&quot;, &quot;i&quot;],数组从位置1开始被原数组覆盖，只有1之前的项0保持不变</span><br><span class="line">[&quot;w&quot;, &quot;i&quot;, &quot;r&quot;,&quot;b&quot;].copyWithin(1,2)//[&quot;w&quot;, &quot;r&quot;, &quot;b&quot;, &quot;b&quot;],索引2到最后的r,b两项分别替换到原数组1开始的各项，当数量不够，变终止</span><br><span class="line">[&quot;w&quot;, &quot;i&quot;, &quot;r&quot;,&apos;b&apos;].copyWithin(1,2,3)//[&quot;w&quot;, &quot;r&quot;, &quot;r&quot;, &quot;b&quot;]，强第1项的i替换为第2项的r</span><br></pre></td></tr></table></figure></p>
+<p>copyWithin方法接收三个参数，被替换数据的开始处、替换块的开始处、替换块的结束处(不包括);copyWithin(s,m,n).</p>
+<p><strong><em> Array.from() :</em></strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Array.from(&#123;&apos;0&apos;:&apos;w&apos;,&apos;1&apos;:&apos;b&apos;,length:2&#125;)//[&quot;w&quot;, &quot;b&quot;],返回数组的长度取决于对象中的length，故此项必须有！</span><br><span class="line">Array.from(&#123;&apos;0&apos;:&apos;w&apos;,&apos;1&apos;:&apos;b&apos;,length:4&#125;)//[&quot;w&quot;, &quot;b&quot;, undefined, undefined],数组后2项没有属性去赋值，故undefined</span><br><span class="line">Array.from(&#123;&apos;0&apos;:&apos;w&apos;,&apos;1&apos;:&apos;b&apos;,length:1&#125;)//[&quot;w&quot;],length小于key的数目，按序添加数组</span><br><span class="line"></span><br><span class="line">//////////////////////////////</span><br><span class="line">let divs=document.getElementsByTagName(&apos;div&apos;);</span><br><span class="line">Array.from(divs)//返回div元素数组</span><br><span class="line">Array.from(&apos;wbiokr&apos;)//[&quot;w&quot;, &quot;b&quot;, &quot;i&quot;, &quot;o&quot;, &quot;k&quot;, &quot;r&quot;]</span><br><span class="line">Array.from([1,2,3],function(x)&#123;</span><br><span class="line">        return x+1&#125;)//[2, 3, 4],第二个参数为回调函数</span><br></pre></td></tr></table></figure></p>
+<p>Array.from可以把带有lenght属性类似数组的对象转换为数组，也可以把字符串等可以遍历的对象转换为数组，它接收2个参数，转换对象与回调函数</p>
 
       
     </div>
@@ -361,8 +341,48 @@
     
 
 
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/kuaYu/">
+                    js 跨域
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/String字符串方法/">
+                    String字符串方法
+                </a>
+            </div>
+        
+    </nav>
+
   
 </article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
 
 
 
@@ -380,7 +400,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"About　| Chen　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"ES6 Array扩展　| Chen　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -395,6 +415,26 @@
 
     
 
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/kuaYu/" title="上一篇: js 跨域">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/String字符串方法/" title="下一篇: String字符串方法">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/数组去重(es6+es5)/">数组去重</a></li><li class="post-list-item"><a class="post-list-link" href="/闭包/">闭包</a></li><li class="post-list-item"><a class="post-list-link" href="/css-center/">无具体宽高元素水平垂直居中</a></li><li class="post-list-item"><a class="post-list-link" href="/attrAndProp/">attr prop 区别</a></li><li class="post-list-item"><a class="post-list-link" href="/kuaYu/">js 跨域</a></li><li class="post-list-item"><a class="post-list-link" href="/es6新增array/">ES6 Array扩展</a></li><li class="post-list-item"><a class="post-list-link" href="/String字符串方法/">String字符串方法</a></li><li class="post-list-item"><a class="post-list-link" href="/ES6新增语法/">ES6新增语法</a></li><li class="post-list-item"><a class="post-list-link" href="/ES6之字符串扩展方法(常用)/">ES6之字符串扩展方法(常用)</a></li><li class="post-list-item"><a class="post-list-link" href="/Ajax/">Ajax</a></li><li class="post-list-item"><a class="post-list-link" href="/Class-类-初识/">class 类--初识</a></li><li class="post-list-item"><a class="post-list-link" href="/Array方法/">Array方法</a></li></ul>
 
 
 
